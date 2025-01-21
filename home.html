@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayurveda App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="brand">Ayurveda App</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="/Client/services.html">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="/Client/login.html" class="cta-button">Login</a></li>
+        <li><a href="#signup" class="cta-button">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="container">
+      <h2 class="animate__animated animate__fadeIn animate__delay-1s">Personalized Ayurveda Recommendations</h2>
+      <p class="animate__animated animate__fadeIn animate__delay-2s">Discover tailored diets, treatments, and lifestyle tips based on your body and mind.</p>
+    </div>
+    <a href="/Client/userinput.html"><button id="but">Get Started</button></a>
+  </header>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <img src="https://img.freepik.com/premium-photo/female-nutritionist-white-coat-sitting-indoors-office-workplace_146671-29786.jpg?w=740" alt="Personalized Diet">
+          <h3>Personalized Diet</h3>
+          <p>Get a customized diet plan based on your health data.</p>
+        </div>
+        <div class="service-card">
+          <img src="https://jooinn.com/images/yoga-8.jpg" alt="Yoga and Exercises">
+          <h3>Yoga and Exercises</h3>
+          <p>Discover yoga practices tailored to your body type and needs.</p>
+        </div>
+        <div class="service-card">
+          <img src="https://media.istockphoto.com/id/1277145238/photo/large-variety-of-multi-colored-dried-tea-leaves-and-flowers-on-the-table.jpg?s=1024x1024&w=is&k=20&c=Fj6wJaJyze0mr4_XmcTXhKoVUZmSn8Bi_aQHn8ixGz8=" alt="Herbal Remedies">
+          <h3>Herbal Remedies</h3>
+          <p>Receive suggestions on ayurvedic herbs that fit your lifestyle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We offer personalized Ayurveda advice that balances your body, mind, and spirit, helping you achieve your best health naturally.Welcome to [Your Ayurveda App Name], where ancient wisdom meets modern wellness. Our mission is to bring the holistic principles of Ayurveda into your everyday life, helping you achieve balance, vitality, and harmony.</p>
+      <img src="https://via.placeholder.com/800x400" alt="Ayurveda Benefits" class="about-image">
+    </div>
+  </section>
+
+  <!-- Testimonials Slider -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div id="testimonial-slider" class="slider">
+        <div class="slide">
+          <p>"This app has truly transformed my life. The personalized diet recommendations are spot on!"</p>
+          <h4>- Jane Doe</h4>
+        </div>
+        <div class="slide">
+          <p>"I love the yoga suggestions. I feel healthier and more balanced every day."</p>
+          <h4>- John Smith</h4>
+        </div>
+        <div class="slide">
+          <p>"The herbal remedies they recommended helped me deal with stress and anxiety effectively."</p>
+          <h4>- Sarah Lee</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Login Form (Modal) -->
+  <section id="login" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h2>Login</h2>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <input type="password" placeholder="Enter your password" required>
+        <button type="submit" class="cta-button">Login</button>
+      </form>
+      <button onclick="closeModal('login')" class="close-btn">Close</button>
+    </div>
+  </section>
+
+  <!-- Sign Up Form (Modal) -->
+  <section id="signup" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h2>Sign Up</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="password" placeholder="Create a Password" required>
+        <button type="submit" class="cta-button">Sign Up</button>
+      </form>
+      <button onclick="closeModal('signup')" class="close-btn">Close</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Ayurveda App. All Rights Reserved.</p>
+        <p>Follow us on social media: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+        <p>Address: 123 Ayurveda St, Wellness City, Health Country</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
