@@ -1,0 +1,225 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #4CAF50;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    padding-bottom: 20px;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .cta-button {
+    background: #4CAF50;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 40px;
+  }
+  
+  .cta-button:hover {
+    background: #45a049;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+    text-align: center;
+    /* color: #fff; */
+    padding: 5rem 0;
+    margin-top: 60px;
+    background-image: url(https://ehealth.eletsonline.com/wp-content/uploads/2018/04/aurveda-1024x576.jpg);
+    height: 400px;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+  }
+  
+#but{
+    margin-top: 20px;
+    color: #110404;
+    text-decoration: none;
+    margin-top: 70px;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid black;
+    /* border: none; */
+    
+
+}
+  /* Services Section */
+  .services {
+    padding: 3rem 0;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  .services .service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .services .service-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .services .service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .services .service-card h3 {
+    font-size: 1.5rem;
+   margin-bottom: 1rem;
+  }
+
+  .about{
+    text-align: center;
+    height: 200px;
+  }
+  
+  .about p{
+    padding-top: 30px;
+  }
+  .testimonials {
+    background: #02010a;
+    padding: 3rem 0;
+    color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .testimonials .slider {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .testimonials .slide {
+    display: none;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 1rem;
+  }
+  
+  .testimonials .slide p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonials .slide h4 {
+    font-weight: bold;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 3rem 0;
+    text-align: center;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact form button {
+    background: #4CAF50;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .contact form button:hover {
+    background: #45a049;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #4CAF50;
+  }
+  

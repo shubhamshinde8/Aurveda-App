@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Health & Ayurveda</title>
+    <style>
+        /* Reset and Basic Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin-top: 60px; /* Space for the fixed navbar */
+            padding: 20px;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background-image: url(https://www.gotirth.org/wp-content/uploads/2019/06/AYURVEDA.jpg);
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        /* Animation for header */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Main Form Section */
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        /* Form Section */
+        .form {
+            width: 45%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: slideInRight 1s ease-out;
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .form h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .form label {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .form input, .form select, .form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f4f4f4;
+            font-size: 16px;
+        }
+
+        .form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .form button:hover {
+            background-color: #45a049;
+        }
+
+        /* Image Section */
+        .image-container {
+            width: 45%;
+            height: 100%;
+            animation: slideInLeft 1s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Ayurveda Section */
+        .ayurveda-section {
+            margin-top: 80px;
+            padding: 40px;
+            background-color: #e8f5e9;
+            border-radius: 10px;
+            text-align: center;
+            animation: slideUp 1s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .ayurveda-section h2 {
+            font-size: 30px;
+            color: #388e3c;
+            margin-bottom: 20px;
+        }
+
+        .ayurveda-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar Section -->
+<div class="navbar">
+    <a href="/Client/home.html">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</div>
+
+<!-- Heading Section -->
+<div class="header">
+    <h1>Personalized Health & Ayurveda Recommendations</h1>
+    <p>Get customized health advice based on your body and lifestyle using Ayurvedic principles.</p>
+</div>
+
+<!-- Form and Image Section -->
+<div class="form-container">
+    <!-- Form Section -->
+    <div class="form">
+        <h2>Enter Your Details</h2>
+        <form id="userForm">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="allergies">Allergies:</label>
+            <textarea id="allergies" name="allergies"></textarea>
+
+            <label for="medical-history">Medical History:</label>
+            <textarea id="medical-history" name="medical-history"></textarea>
+
+            <label for="activity-level">Activity Level:</label>
+            <textarea name="activity-level" id="activity-level"></textarea>
+            <!-- <select id="activity-level" name="activity-level" required>
+                <option value="sedentary">Sedentary</option>
+                <option value="light">Light</option>
+                <option value="moderate">Moderate</option>
+                <option value="active">Active</option>
+            </select> -->
+
+            <label for="diet-preferences">Diet Preferences:</label>
+            <textarea name="diet-preferences" id="diet-preference"></textarea>
+            <!-- <select id="diet-preferences" name="diet-preferences" required>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="non-vegetarian">Non-Vegetarian</option>
+            </select> -->
+
+            <label for="health-goals">Health Goals:</label>
+            <textarea name="helth-goals" id="health-goals"></textarea>
+            <!-- <select id="health-goals" name="health-goals" required>
+                <option value="weight-loss">Weight Loss</option>
+                <option value="wellness">Wellness</option>
+                <option value="muscle-gain">Muscle Gain</option>
+            </select> -->
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Image Section -->
+    <div class="image-container">
+        <img src="https://im.indiatimes.in/photogallery/2014/Dec/1565439_1437680486.jpg" alt="Human Body Image">
+    </div>
+</div>
+
+<!-- Ayurveda Section -->
+<div class="ayurveda-section">
+    <h2>How Ayurveda Helps Us</h2>
+    <p>Ayurveda is an ancient system of natural healing that brings balance to the body, mind, and spirit. It uses personalized recommendations based on your unique constitution, helping you achieve optimal health and wellness.</p>
+</div>
+
+<!-- Footer Section -->
+<div class="footer">
+    <p>&copy; 2025 Personalized Health. All Rights Reserved.</p>
+</div>
+
+</body>
+</html>
